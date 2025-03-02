@@ -4,5 +4,11 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [require("daisyui")],
+
+  daisyui: {
+    themes: ["light", "dark"], // Available themes
+    darkTheme: "dark", // Explicitly set dark theme
+    baseTheme: "light", // Explicitly set light mode as default
+  },
+};
